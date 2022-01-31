@@ -1,0 +1,25 @@
+//**************M.DHANARAJU******************//
+#include <stdio.h>
+void main(){
+    int first,last,middle,n,c,search,array[10];
+    printf("enter the size of array");
+    scanf("%d",&n);
+    printf("enter the integer values %d assending order",n);
+    for(c=0;c<n;c++)
+    scanf("%d",&array[c]);
+    printf("enter value to be search");
+    scanf("%d",&search);
+    first=0;
+    last=n-1;
+    middle=(first+last)/2;
+    while(first<=last){
+        if(array[middle]<search)
+    first =middle+1;
+    else if(array[middle]==search){
+        printf("element found at array index %d",middle);
+        break;}
+    else
+    last =middle-1;
+    middle=(first+last)/2;}
+    if(first>last)
+    printf("element is not found aray index");}
