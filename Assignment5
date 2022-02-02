@@ -1,0 +1,25 @@
+//**************M.DHANARAJU******************//
+#include<stdio.h>
+void main()
+{
+ int n,array[10],i,j,temp;
+ printf("Enter the size of array");
+ scanf("%d",&n);
+ printf("Enter the elements are");
+ for(i=0;i<n;i++)
+ scanf("%d",&array[i]);
+    for(i=0;i<n;i++) {     
+        for(j=i+1;j<n;j++) {     
+           if(array[i]>array[j]) {    
+               temp=array[i];    
+               array[i]=array[j];    
+               array[j]=temp;    
+           }     
+        }     
+    }    
+    printf("\n");    
+    printf("arrange the elements in sequential order\n");
+ for(i=0;i<n;i++){
+ printf("%d\n",array[i]);
+ }
+}
