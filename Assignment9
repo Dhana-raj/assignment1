@@ -1,0 +1,36 @@
+//*************M.DHANARAJU***********//
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+    char ch[20]; 
+    int i,n,vowels,consonants;
+    printf("Enter any string: ");
+    gets(ch);
+    vowels=0;
+    consonants=0;
+    n=strlen(ch);
+for(i=0;i<n;i++)
+    {
+        if((ch[i]>='a'&&ch[i]<='z')||(ch[i]>='A'&&ch[i]<='Z'))
+        {
+            switch(ch[i])
+            {
+                case 'A':
+                case 'a':
+                case 'E':
+                case 'e':
+                case 'I':
+                case 'i':
+                case 'O':
+                case 'o':
+                case 'U':
+                case 'u':
+                    vowels++;
+                    break;
+                default:
+                    consonants++;
+    }   }   }
+    printf("number of vowels are =%d\n",vowels);
+    printf("number of consonants are =%d\n",consonants);
+}
