@@ -1,0 +1,15 @@
+//**********M.DHANARAJU************//
+#include <stdio.h>
+int main(){
+int i=0;
+char ch[12];
+puts("Enter input:");
+gets(ch);
+puts("Output:");
+while(ch[i]!='\0')
+{
+ printf("%c",++ch[i]);
+ i++;
+}
+return 0;
+}
