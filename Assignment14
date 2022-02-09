@@ -1,0 +1,24 @@
+//************M.DHANARAJU***************//
+#include<stdio.h>
+int main()
+{
+	int a,b;
+	int *p1,*p2;	
+    int add,sub,mult;
+    float div;   
+    printf("Enter number1:\n");
+    scanf("%d",&a);
+    printf("Enter number2:\n");
+    scanf("%d",&b);
+    p1=&a;
+    p2=&b;
+    sum=(*p1)+(*p2);
+    printf("sum= %d\n",add);
+    sub=(*p1)-(*p2);
+    printf("subtraction= %d\n",sub);
+    mult=(*p1)*(*p2);
+    printf("Multiplication= %d\n",mult);
+    div=(*p1)/(*p2);
+    printf("Division= %f\n",div);
+    return 0;
+}
