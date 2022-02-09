@@ -1,0 +1,20 @@
+//************M.DHANARAJU************//
+#include<stdio.h>
+int main()
+{
+   int array[10];
+   int i,n,sum=0;
+   int *ptr;
+   printf("\nEnter the size array");
+   scanf("%d",&n);
+   printf("\nEnter the array elements");
+   for(i=0;i<n;i++)
+   scanf("%d",&array[i]);
+   ptr=array;
+   for(i=0;i<n;i++) 
+   {
+      sum=sum+*ptr;
+      ptr++;
+   }
+   printf("The sum is:%d",sum);
+}
