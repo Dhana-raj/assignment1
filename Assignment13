@@ -1,11 +1,11 @@
-//************M.DHANARAJU************//
-#include<stdio.h>
-void recursive(int n) 
-{
-    printf("%d\n",n);
-    if (n<10) {
+//*************M.DHANARAJU**************//
+#include <stdio.h>
+void recursive(int n) {
+    if (n<10) 
+    {
         recursive(n+1);
     }
+    printf("%d\n",n);
 }
 int main() {
     recursive(1);
