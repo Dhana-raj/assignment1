@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() 
+{
+ FILE *fp;
+ char ch;
+ fp= fopen('example.txt','r');
+ while((ch=getc(fp))!= EOF)
+ {
+  printf('%ch',ch);
+ }
+  fclose(fp);
+  return 0;
+}
